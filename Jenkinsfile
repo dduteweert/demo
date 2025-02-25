@@ -6,6 +6,7 @@ pipeline {
             steps {
                 // the script that executes on the jenkins server/jenkins agent
                 echo 'building the application'
+                sh 'mvn build'
             }
 
         }
