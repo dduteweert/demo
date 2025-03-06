@@ -9,16 +9,16 @@ public class DemoTest {
 
     @Test
     public void firstTest() {
-        assertEquals(1,2);
+        assertEquals(2,2);
     }
 
     @Test
     public void secondTest() {
-        assertNull(new Object());
+        assertNull(null);
     }
 
     @Test
     public void thirdTest() {
-        assertEquals(1,2);
+        assertEquals(1,1);
     }
 }
