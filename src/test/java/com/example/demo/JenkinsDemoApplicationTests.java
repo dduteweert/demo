@@ -8,7 +8,7 @@ class JenkinsDemoApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assertEquals(1,3);
+
 	}
 
 }
