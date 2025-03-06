@@ -6,8 +6,8 @@ pipeline {
             steps {
                 // the script that executes on the jenkins server/jenkins agent
                 echo 'building the application'
-                withMaven {
-                    sh './mvn -B -DskipTests clean package'
+                withMaven (maven: 'maven'){
+                    sh 'mvn -B -DskipTests clean package'
                 }
             }
 
@@ -16,8 +16,8 @@ pipeline {
         stage("test") {
             steps {
                 echo 'testing the application'
-                withMaven {
-                    sh './mvn test'
+                withMaven (maven: 'maven'){
+                    sh 'mvn test'
                 }
             }
 
