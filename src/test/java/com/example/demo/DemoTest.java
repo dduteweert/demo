@@ -16,4 +16,9 @@ public class DemoTest {
     public void secondTest() {
         assertNull(null);
     }
+
+    @Test
+    public void thirdTest() {
+        assertEquals(1,2);
+    }
 }
