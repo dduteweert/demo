@@ -9,12 +9,12 @@ public class DemoTest {
 
     @Test
     public void firstTest() {
-        assertEquals(1,1);
+        assertEquals(1,2);
     }
 
     @Test
     public void secondTest() {
-        assertNull(null);
+        assertNull(new Object());
     }
 
     @Test
